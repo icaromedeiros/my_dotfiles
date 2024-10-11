@@ -1,0 +1,10 @@
+*.swp
+*.swo
+.netrwhist
+*.pyc
+vim/vim/*
+*.sess # debug sessions
+.DS_Store
+
+.vscode/
+.client/
