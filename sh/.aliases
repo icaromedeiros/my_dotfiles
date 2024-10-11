@@ -1,0 +1,36 @@
+# Note: some aliases are duplicate of Oh-My-Zsh aliases
+# Here just to maintain consistency on non-zsh envs
+
+###
+# Git
+###
+
+alias gs='git status'
+alias GS='gs' # Fuck off, ghost script
+
+###
+# MacVim
+###
+
+alias mvim='nocorrect mvim'
+
+###
+# Python
+###
+
+alias jup='python -m jupyter notebook .' # Gets activated virtualenv
+alias penv='python -m venv .venv'
+alias senv='source .venv/bin/activate'
+
+###
+# Rust CLI tools
+###
+
+alias ls=exa
+alias ll='exa --long --header --all --icons --git -s modified'
+alias ps=procs
+alias du=dust
+alias grep=rg
+alias rg='rg -i'
+# RG Context
+alias rgc='rg -C 3'
