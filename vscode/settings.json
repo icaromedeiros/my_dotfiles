@@ -1,0 +1,42 @@
+{
+    "editor.fontFamily": "'Hack Nerd Font', 'DejaVu Sans Mono for Powerline', 'Courier New', monospace",
+    "editor.fontSize": 16,
+    "editor.minimap.enabled": false,
+    "editor.rulers": [120],
+    "editor.detectIndentation": false,
+    "editor.copyWithSyntaxHighlighting": false,
+    "editor.suggestSelection": "first",
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "files.eol": "\n",
+    "git.confirmSync": false,
+    "git.fetchOnPull": true,
+    "git.enableSmartCommit": true,
+    "git.path": "/opt/homebrew/bin/git",
+    "terminal.integrated.shell.osx": "/bin/zsh",
+    "terminal.integrated.fontSize": 16,
+    "terminal.explorerKind": "external",
+    "terminal.integrated.enableBell": true,
+    "search.useIgnoreFiles": false,
+    "search.exclude": {
+        "**/.venv": true
+    },
+    "python.languageServer": "Pylance",
+    "jupyter.askForKernelRestart": false,
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false,
+        "<C-c>": false,
+        "<C-w>": false,
+        "<C-k>": false,
+        "<C-x>": false,
+        "<C-,>": false,
+        "<C-n>": false
+      },
+    "vim.startInInsertMode": true,
+    "telemetry.enableTelemetry": false,
+    "workbench.editor.enablePreview": false,
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
+}
