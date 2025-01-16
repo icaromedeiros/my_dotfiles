@@ -18,6 +18,7 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # Load shell-agnostic aliases and vars
+#  Does not work running from ~/?/dotfiles when installing
 source $HOME/.aliases
 source $HOME/.vars
 
@@ -25,9 +26,10 @@ source $HOME/.vars
 # MacOS (brew) specific and PATH
 ###
 
-# GNU utils take precedence
+# GNU utils take precedence for compatibility (scripting)
 
 # TODO review if needed
+
 # UTILS_PATH="/usr/local/opt/coreutils/libexec/gnubin"
 # FIND_PATH="/usr/local/opt/findutils/libexec/gnubin"
 # LIBTOOL_PATH="/usr/local/opt/libtool/bin/"
@@ -59,23 +61,9 @@ PATH="${CARGO_PATH}:$PATH"
 export LDFLAGS="-L/usr/local/opt/zlib/lib -L/usr/local/opt/bzip2/lib"
 export CPPFLAGS="-I/usr/local/opt/zlib/include -I/usr/local/opt/bzip2/include"
 
-# Do I really need this sheeeee-it ?
-# export NVM_DIR="$HOME/.nvm"
-# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+###
+# Rust
+###
 
-# # >>> conda initialize >>>
-# # !! Contents within this block are managed by 'conda init' !!
-# __conda_setup="$('/Users/icaro/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-# if [ $? -eq 0 ]; then
-#     eval "$__conda_setup"
-# else
-#     if [ -f "/Users/icaro/anaconda3/etc/profile.d/conda.sh" ]; then
-#         . "/Users/icaro/anaconda3/etc/profile.d/conda.sh"
-#     else
-#         export PATH="/Users/icaro/anaconda3/bin:$PATH"
-#     fi
-# fi
-# unset __conda_setup
-# # <<< conda initialize <<<
-
+# Best Rihanna-like prompt in Rust
+eval "$(starship init zsh)"
