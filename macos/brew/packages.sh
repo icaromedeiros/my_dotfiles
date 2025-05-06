@@ -75,7 +75,7 @@ brew install font-hack-nerd-font
 brew install font-open-sans
 
 # Dev tools
-brew install visual-studio-code iterm2 
+brew install visual-studio-code cursor iterm2 
 brew install httpie
 brew install starship
 
