@@ -26,8 +26,8 @@ alias senv='source .venv/bin/activate'
 # Rust CLI tools
 ###
 
-alias ls=exa
-alias ll='exa --long --header --all --icons --git -s modified'
+alias ls=lsd
+alias ll='lsd --long --header --all --icons --git -s modified'
 alias ps=procs
 alias du=dust
 alias grep=rg

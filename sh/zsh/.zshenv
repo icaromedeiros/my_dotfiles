@@ -3,10 +3,19 @@
 #   it often contains exported variables that should be available to other programs.
 # For example, $PATH, $EDITOR, and $PAGER are often set in .zshenv.
 
+# Programming languages and envs magics
+#  - Pyenv / Python
+#  - Rust
+
 eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # export PYENV_ROOT="$HOME"/.pyenv
 # export PATH="${PYENV_ROOT}/bin:$PATH"
+
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
+
+
 eval "$(pyenv virtualenv-init -)"
+. "$HOME/.cargo/env"

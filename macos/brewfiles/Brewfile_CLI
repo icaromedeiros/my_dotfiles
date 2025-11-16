@@ -1,0 +1,52 @@
+### Download Managers ###
+brew 'axel'
+brew 'wget'
+
+### Programming Languages ###
+brew 'go'
+brew 'ruby', link: true
+brew 'rust'
+brew 'python@3.13'
+brew 'python@3.12'
+
+### Python Environment ###
+brew 'pyenv'
+brew 'pyenv-virtualenv'
+brew 'pyenv-virtualenvwrapper'
+brew 'pytorch'
+
+### Rust-Rewritten CLI Tools ###
+brew 'bat' # s/cat
+brew 'tealdeer' # s/man|tldr
+brew 'fzf' # fuzzy finder for ctrl+r s/find
+brew 'dust' # s/du
+brew 'ripgrep' # s/grep
+brew 'procs' # s/ps
+brew 'lsd' # s/ls
+brew 'fd' # s/find
+
+### Version Control ###
+brew 'git'
+brew 'gh'
+
+### Dev Utils ###
+brew 'gcc'
+brew 'samba'
+brew 'httpie'
+brew 'docker'
+
+### Blogging ###
+brew 'hugo'
+
+### Vims ###
+brew 'neovim'
+brew 'vim'
+
+### Shells ###
+brew 'nushell'
+brew 'oh-my-posh'
+brew 'zsh'
+brew 'starship'
+
+### AI Tools ###
+brew 'ollama'
