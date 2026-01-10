@@ -31,6 +31,8 @@ alias ll='lsd --long --header --all --icons --git -s modified'
 alias ps=procs
 alias du=dust
 alias grep=rg
+
+# RG
 alias rg='rg -i'
-# RG Context
+# RG with Context
 alias rgc='rg -C 3'

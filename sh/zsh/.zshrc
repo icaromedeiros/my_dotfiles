@@ -12,7 +12,7 @@ HIST_STAMPS="yyyy-mm-dd"
 
 # cp: copy with progress bar
 plugins=(
-  git zsh-autosuggestions python brew
+  zsh-autosuggestions git python brew
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -23,26 +23,11 @@ source $HOME/.aliases
 source $HOME/.vars
 
 ###
-# MacOS (brew) specific and PATH
-###
-
-# GNU utils take precedence for compatibility (scripting)
-
-# TODO review if needed
-
-# UTILS_PATH="/usr/local/opt/coreutils/libexec/gnubin"
-# FIND_PATH="/usr/local/opt/findutils/libexec/gnubin"
-# LIBTOOL_PATH="/usr/local/opt/libtool/bin/"
-# GNU_PATHS="${UTILS_PATH}:${FIND_PATH}:${LIBTOOL_PATH}"
-
-# export PATH="${GNU_PATHS}:$PATH"
-
-###
 # Rust CLI configs
 ###
 
-# ctrl-r binding
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)
 
 # Use bat in man pages
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
@@ -57,7 +42,7 @@ PATH="${CARGO_PATH}:$PATH"
 # Python
 ###
 
-# Zlib envvars (useful to compile Python)
+# Zlib envvars (useful to compile Python in pyenv)
 export LDFLAGS="-L/usr/local/opt/zlib/lib -L/usr/local/opt/bzip2/lib"
 export CPPFLAGS="-I/usr/local/opt/zlib/include -I/usr/local/opt/bzip2/include"
 

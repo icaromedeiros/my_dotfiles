@@ -1,4 +1,3 @@
 # ZSH
 
-
-...
+ZSH-related files
