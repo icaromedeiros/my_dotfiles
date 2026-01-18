@@ -12,7 +12,7 @@ HIST_STAMPS="yyyy-mm-dd"
 
 # cp: copy with progress bar
 plugins=(
-  zsh-autosuggestions git python brew
+  zsh-autosuggestions git brew docker fzf ssh
 )
 
 source $ZSH/oh-my-zsh.sh

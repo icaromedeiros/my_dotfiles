@@ -47,10 +47,6 @@ cask 'proton-pass'
 cask 'tor-browser'
 cask 'transmission'
 
-### Casks: Virtualization ###
-cask 'virtualbox'
-cask 'utm' # New
-
 ### Browser Casks ###
 cask 'brave-browser'
 cask 'chromium'

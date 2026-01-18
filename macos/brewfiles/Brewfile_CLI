@@ -15,6 +15,9 @@ brew 'pyenv-virtualenv'
 brew 'pyenv-virtualenvwrapper'
 brew 'pytorch'
 
+### AI ###
+brew 'ollama'
+
 ### Rust-Rewritten CLI Tools ###
 brew 'bat' # s/cat
 brew 'tealdeer' # s/man|tldr
